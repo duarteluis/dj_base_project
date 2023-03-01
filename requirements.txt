@@ -2,3 +2,5 @@ pre-commit
 black
 pycln
 isort
+django
+django-user-sessions
