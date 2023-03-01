@@ -8,9 +8,6 @@ exclude = '''
 )/
 '''
 
-[tool.pycln]
-all = true
-
 [tool.isort]
 line_length = 79
 multi_line_output = 3
