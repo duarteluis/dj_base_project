@@ -15,7 +15,23 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    # Text and xml static files:
+    path(
+        "robots.txt",
+        TemplateView.as_view(
+            template_name="txt/robots.txt",
+            content_type="text/plain",
+        ),
+    ),
+    path(
+        "humans.txt",
+        TemplateView.as_view(
+            template_name="txt/humans.txt",
+            content_type="text/plain",
+        ),
+    ),
 ]

@@ -3,4 +3,5 @@ black
 pycln
 isort
 django
+django-extensions
 django-user-sessions

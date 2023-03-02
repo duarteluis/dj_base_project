@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     "user_sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # https://github.com/django-extensions/django-extensions
+    "django_extensions",
+    # apps
     "apps.users",
 ]
 
